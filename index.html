@@ -299,6 +299,9 @@
 					        <a href="#get-quote-groups-associated-with-api-user" class="toc-h3 toc-link" data-title="Get Quote Groups Associated with API User">Get Quote Groups Associated with API User</a>
 					      </li>
 					      <li>
+					        <a href="#get-a-quote-groups-proposal-with-a-specific-proposal-identifier" class="toc-h3 toc-link" data-title="Get A Quote Groups Proposal with a specific proposal identifier">Get A Quote Groups Proposal with a specific proposal identifier</a>
+					      </li>
+					      <li>
 					        <a href="#add-a-note-to-a-specific-quote-group" class="toc-h3 toc-link" data-title="Add a note to a specific Quote Group">Add a note to a specific Quote Group</a>
 					      </li>
 					  </ul>
@@ -1085,13 +1088,13 @@ The V1 API returns a `code: 404` in the response body when the requested provide
 <h2 id='quote-groups'>Quote Groups</h2><h3 id='get-quote-group-by-a-specific-identifier'>Get Quote Group by a specific identifier</h3><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'ScientistApIV1'</span>
 
 <span class="n">api</span> <span class="o">=</span> <span class="no">ScientistApIV1</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">get!</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">quote_group</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="ss">id: </span><span class="n">quote_group_id</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">quote_groups</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="n">quote_group_id</span><span class="p">)</span>
 </code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://app.scientist.com/api/quote_gropus/:quote_group_id.json"</span>
   -H <span class="s2">"Authorization: Bearer [bearer_token]"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">ScientistApIV1</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'ScientistApIV1'</span><span class="p">);</span>
 
 <span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">ScientistApIV1</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">);</span>
-<span class="nx">api</span><span class="p">.</span><span class="nx">quote_group</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span> <span class="nx">quote_group_id</span> <span class="p">).</span><span class="nx">then</span><span class="p">(({</span><span class="nx">quote_group</span><span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
+<span class="nx">api</span><span class="p">.</span><span class="nx">quote_groups</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span> <span class="nx">quote_group_id</span> <span class="p">).</span><span class="nx">then</span><span class="p">(({</span><span class="nx">quote_group</span><span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="c1">// do something</span>
 <span class="p">});</span>
 
@@ -1208,13 +1211,13 @@ The V1 API returns a `code: 404` in the response body when the requested provide
 <h3 id='get-quote-groups-associated-with-api-user'>Get Quote Groups Associated with API User</h3><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'ScientistApIV1'</span>
 
 <span class="n">api</span> <span class="o">=</span> <span class="no">ScientistApIV1</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">get!</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">quote_group</span><span class="p">.</span><span class="nf">get</span><span class="p">()</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">quote_groups</span><span class="p">.</span><span class="nf">get</span><span class="p">()</span>
 </code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://app.scientist.com/api/quote_groups/mine.json"</span>
   -H <span class="s2">"Authorization: Bearer [bearer_token]"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">ScientistApIV1</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'ScientistApIV1'</span><span class="p">);</span>
 
 <span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">ScientistApIV1</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">);</span>
-<span class="nx">api</span><span class="p">.</span><span class="nx">quote_group</span><span class="p">.</span><span class="nx">get</span><span class="p">().</span><span class="nx">then</span><span class="p">(({</span><span class="nx">quote_group</span><span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
+<span class="nx">api</span><span class="p">.</span><span class="nx">quote_groups</span><span class="p">.</span><span class="nx">get</span><span class="p">().</span><span class="nx">then</span><span class="p">(({</span><span class="nx">quote_group</span><span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="c1">// do something</span>
 <span class="p">});</span>
 
@@ -1449,16 +1452,115 @@ The V1 API returns a `code: 404` in the response body when the requested provide
 <p><em>HTTP Request</em></p>
 
 <p><code>GET http://app.scientist.com/api/v1/quote_groups/mine.json</code></p>
-<h3 id='add-a-note-to-a-specific-quote-group'>Add a note to a specific Quote Group</h3><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'ScientistApIV1'</span>
+<h3 id='get-a-quote-groups-proposal-with-a-specific-proposal-identifier'>Get A Quote Groups Proposal with a specific proposal identifier</h3><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'ScientistApIV1'</span>
 
 <span class="n">api</span> <span class="o">=</span> <span class="no">ScientistApIV1</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">get!</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">quote_group</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="ss">id: </span><span class="n">quote_group_id</span><span class="p">)</span>
-</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://app.scientist.com/api/quote_gropus/:quote_group_id.json"</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">quote_groups</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span> <span class="n">proposal_id</span> <span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://app.scientist.com/api/quote_groups/quote_group/proposals/:proposal_id.json"</span>
   -H <span class="s2">"Authorization: Bearer [bearer_token]"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">ScientistApIV1</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'ScientistApIV1'</span><span class="p">);</span>
 
 <span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">ScientistApIV1</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">);</span>
-<span class="nx">api</span><span class="p">.</span><span class="nx">quote_group</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span> <span class="nx">quote_group_id</span> <span class="p">).</span><span class="nx">then</span><span class="p">(({</span><span class="nx">quote_group</span><span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
+<span class="nx">api</span><span class="p">.</span><span class="nx">quote_group</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span> <span class="nx">proposal_id</span> <span class="nx">_</span><span class="p">).</span><span class="nx">then</span><span class="p">(({</span><span class="nx">proposal</span><span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// do something</span>
+<span class="p">});</span>
+
+
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+   </span><span class="s2">"results"</span><span class="p">:{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"active"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"draft"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"change_order"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"change_approved_at"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"compliance_required"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"compliance_auto_submittable"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="s2">"First Proposal"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"identifier"</span><span class="p">:</span><span class="s2">"000000"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"obsoleted"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"proposal_type"</span><span class="p">:</span><span class="s2">"Estimate"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"provider_accounting_email"</span><span class="p">:</span><span class="s2">"tyrel@schroeder.net"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"state"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"expires_at"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"exclude_from_reporting"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"docusign_signature_required"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"scanned_signature_required"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"purchase_justification_comment"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"purchase_justifications"</span><span class="p">:[</span><span class="w">
+
+      </span><span class="p">],</span><span class="w">
+      </span><span class="s2">"approval_changes"</span><span class="p">:{</span><span class="w">
+
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"legal_obligations"</span><span class="p">:[</span><span class="w">
+
+      </span><span class="p">],</span><span class="w">
+      </span><span class="s2">"override_created_at"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"removed_files"</span><span class="p">:[</span><span class="w">
+
+      </span><span class="p">],</span><span class="w">
+      </span><span class="s2">"commission_rate"</span><span class="p">:</span><span class="s2">"5.0"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"po_adjustment_rate"</span><span class="p">:</span><span class="mf">0.0</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"user_full_name"</span><span class="p">:</span><span class="s2">"person name"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"user_legal_name"</span><span class="p">:</span><span class="s2">"org name"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"payment_disclaimer_message"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"obsolete_parent"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"agree_to_terms"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"provider_couch_id"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"quoted_ware_id"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"quote_group_id"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"user_id"</span><span class="p">:</span><span class="mi">8</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"parent_proposal_id"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"accepted_by_id"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"change_approver_id"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"provider_shipping_address_id"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"customer_shipping_address_id"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"customer_billing_address_id"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"remittance_address_id"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"couch_parent_proposal_id"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"uuid"</span><span class="p">:</span><span class="s2">"f9590e0d-6a75-468c-9312-050e3ace87ad"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"couch_id"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"origin"</span><span class="p">:</span><span class="s2">"depot"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"access"</span><span class="p">:[</span><span class="w">
+         </span><span class="s2">"depot"</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="s2">"created_at"</span><span class="p">:</span><span class="s2">"2019-10-29T18:17:48.575Z"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="s2">"2019-10-29T18:17:48.575Z"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"retail_subtotal_price"</span><span class="p">:</span><span class="s2">"303.0"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"wholesale_subtotal_price"</span><span class="p">:</span><span class="s2">"287.82"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"retail_total_price"</span><span class="p">:</span><span class="s2">"413.0"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"wholesale_total_price"</span><span class="p">:</span><span class="s2">"397.82"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"legal_obligation_data"</span><span class="p">:{</span><span class="w">
+
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"provider_pg_id"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"provider_id"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"category"</span><span class="p">:</span><span class="s2">"hbs"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"no_expiration"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"quoted_ware_pg_id"</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"user_ref_id"</span><span class="p">:</span><span class="mi">9</span><span class="w">
+   </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves a specific proposal associated with quote group using a specific proposal identifier.</p>
+
+<p><em>HTTP Request</em></p>
+
+<p><code>GET http://app.scientist.com/api/v1/quote_groups/quote_group/proposals/:proposal_id.json</code></p>
+<h3 id='add-a-note-to-a-specific-quote-group'>Add a note to a specific Quote Group</h3><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'ScientistApIV1'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">ScientistApIV1</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">get!</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">add_note_</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="n">quote_group_id</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://app.scientist.com/api/quote_groups/:quote_group_id.json"</span>
+  -H <span class="s2">"Authorization: Bearer [bearer_token]"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">ScientistApIV1</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'ScientistApIV1'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">ScientistApIV1</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">);</span>
+<span class="nx">api</span><span class="p">.</span><span class="nx">add_note</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span> <span class="nx">quote_group_id</span> <span class="p">).</span><span class="nx">then</span><span class="p">(({</span><span class="nx">msg</span><span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="c1">// do something</span>
 <span class="p">});</span>
 
@@ -1481,7 +1583,7 @@ The V1 API returns a `code: 404` in the response body when the requested provide
 <p>The above command returns JSON object with the following structure:</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-    </span><span class="s2">"msg"</span><span class="p">:</span><span class="w"> </span><span class="s2">"note save"</span><span class="w">
+    </span><span class="s2">"msg"</span><span class="p">:</span><span class="w"> </span><span class="s2">"note saved"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 <p>Associate a note with a specific quote group identifier.</p>

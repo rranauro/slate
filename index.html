@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>API Reference</title>
+    <title>Scientist.com API Reference</title>
 
     <style>
       .highlight table td { padding: 5px; }
@@ -196,24 +196,23 @@
   color: #f92672;
 }
     </style>
-    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
-    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
-      <script src="javascripts/all.js"></script>
+    <link href="stylesheets/screen-833b43a5.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print-bccf8c07.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all-362a3400.js"></script>
   </head>
 
-  <body class="index" data-languages="[&quot;shell&quot;,&quot;ruby&quot;,&quot;python&quot;,&quot;javascript&quot;]">
+  <body class="index" data-languages="[&quot;shell&quot;,&quot;ruby&quot;,&quot;javascript&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
-        <img src="images/navbar.png" alt="Navbar" />
+        <img src="images/navbar-cad8cdcb.png" alt="Navbar" />
       </span>
     </a>
     <div class="toc-wrapper">
-      <img src="images/logo.png" class="logo" alt="Logo" />
+      <img src="images/standard-logo-6def2dc0.png" class="logo" alt="Standard logo" />
         <div class="lang-selector">
               <a href="#" data-language-name="shell">shell</a>
               <a href="#" data-language-name="ruby">ruby</a>
-              <a href="#" data-language-name="python">python</a>
               <a href="#" data-language-name="javascript">javascript</a>
         </div>
         <div class="search">
@@ -225,19 +224,116 @@
             <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
           </li>
           <li>
-            <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
+            <a href="#location" class="toc-h1 toc-link" data-title="Location">Location</a>
           </li>
           <li>
-            <a href="#kittens" class="toc-h1 toc-link" data-title="Kittens">Kittens</a>
+            <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#get-all-kittens" class="toc-h2 toc-link" data-title="Get All Kittens">Get All Kittens</a>
+                    <a href="#create-marketplace-application" class="toc-h2 toc-link" data-title="Create marketplace application">Create marketplace application</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#api-v1-reference" class="toc-h1 toc-link" data-title="API V1 Reference">API V1 Reference</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#categories" class="toc-h2 toc-link" data-title="Categories">Categories</a>
+					  <ul class="toc-list-h3">
+					      <li>
+					        <a href="#get-all-categories" class="toc-h3 toc-link" data-title="Get All Categories">Get All Categories</a>
+					      </li>
+					      <li>
+					        <a href="#get-a-specific-category" class="toc-h3 toc-link" data-title="Get A Specific Category">Get A Specific Category</a>
+					      </li>
+					  </ul>
                   </li>
                   <li>
-                    <a href="#get-a-specific-kitten" class="toc-h2 toc-link" data-title="Get a Specific Kitten">Get a Specific Kitten</a>
+                    <a href="#dynamic-forms" class="toc-h2 toc-link" data-title="Dynamic Forms">Dynamic Forms</a>
+					  <ul class="toc-list-h3">
+					      <li>
+					        <a href="#get-a-dynamic-form-by-id" class="toc-h3 toc-link" data-title="Get A Dynamic Form by :id">Get A Dynamic Form by :id</a>
+					      </li>
+					  </ul>
                   </li>
                   <li>
-                    <a href="#delete-a-specific-kitten" class="toc-h2 toc-link" data-title="Delete a Specific Kitten">Delete a Specific Kitten</a>
+                    <a href="#organizations" class="toc-h2 toc-link" data-title="Organizations">Organizations</a>
+					  <ul class="toc-list-h3">
+					      <li>
+					        <a href="#get-all-organizations" class="toc-h3 toc-link" data-title="Get All Organizations">Get All Organizations</a>
+					      </li>
+					      <li>
+					        <a href="#get-default-organization" class="toc-h3 toc-link" data-title="Get Default Organization">Get Default Organization</a>
+					      </li>
+					      <li>
+					        <a href="#get-current-organization" class="toc-h3 toc-link" data-title="Get Current Organization">Get Current Organization</a>
+					      </li>
+					  </ul>
+                  </li>
+                  <li>
+                    <a href="#providers" class="toc-h2 toc-link" data-title="Providers">Providers</a>
+					  <ul class="toc-list-h3">
+					      <li>
+					        <a href="#get-all-providers" class="toc-h3 toc-link" data-title="Get All Providers">Get All Providers</a>
+					      </li>
+					      <li>
+					        <a href="#get-a-specific-provider" class="toc-h3 toc-link" data-title="Get A Specific Provider">Get A Specific Provider</a>
+					      </li>
+					  </ul>
+                  </li>
+                  <li>
+                    <a href="#providers-wares" class="toc-h2 toc-link" data-title="Providers Wares">Providers Wares</a>
+					  <ul class="toc-list-h3">
+					      <li>
+					        <a href="#get-quot-wares-quot-for-a-specific-provider" class="toc-h3 toc-link" data-title="Get "Wares" for a specific Provider">Get "Wares" for a specific Provider</a>
+					      </li>
+					  </ul>
+                  </li>
+                  <li>
+                    <a href="#quote-groups" class="toc-h2 toc-link" data-title="Quote Groups">Quote Groups</a>
+					  <ul class="toc-list-h3">
+					      <li>
+					        <a href="#get-quote-group-by-a-specific-identifier" class="toc-h3 toc-link" data-title="Get Quote Group by a specific identifier">Get Quote Group by a specific identifier</a>
+					      </li>
+					      <li>
+					        <a href="#get-quote-groups-associated-with-api-user" class="toc-h3 toc-link" data-title="Get Quote Groups Associated with API User">Get Quote Groups Associated with API User</a>
+					      </li>
+					      <li>
+					        <a href="#add-a-note-to-a-specific-quote-group" class="toc-h3 toc-link" data-title="Add a note to a specific Quote Group">Add a note to a specific Quote Group</a>
+					      </li>
+					  </ul>
+                  </li>
+                  <li>
+                    <a href="#quoted-wares" class="toc-h2 toc-link" data-title="Quoted Wares">Quoted Wares</a>
+					  <ul class="toc-list-h3">
+					      <li>
+					        <a href="#get-quoted-wares" class="toc-h3 toc-link" data-title="Get Quoted Wares">Get Quoted Wares</a>
+					      </li>
+					  </ul>
+                  </li>
+                  <li>
+                    <a href="#users" class="toc-h2 toc-link" data-title="Users">Users</a>
+					  <ul class="toc-list-h3">
+					      <li>
+					        <a href="#get-users" class="toc-h3 toc-link" data-title="Get Users">Get Users</a>
+					      </li>
+					  </ul>
+                  </li>
+                  <li>
+                    <a href="#wares" class="toc-h2 toc-link" data-title="Wares">Wares</a>
+					  <ul class="toc-list-h3">
+					      <li>
+					        <a href="#get-wares" class="toc-h3 toc-link" data-title="Get Wares">Get Wares</a>
+					      </li>
+					  </ul>
+                  </li>
+                  <li>
+                    <a href="#webhooks" class="toc-h2 toc-link" data-title="Webhooks">Webhooks</a>
+					  <ul class="toc-list-h3">
+					      <li>
+					        <a href="#create-a-webhook" class="toc-h3 toc-link" data-title="Create a Webhook">Create a Webhook</a>
+					      </li>
+					  </ul>
                   </li>
               </ul>
           </li>
@@ -254,80 +350,202 @@
       <div class="dark-box"></div>
       <div class="content">
         <h1 id='introduction'>Introduction</h1>
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
+<p>Scientist’s Application Programming Interface (API) gives application developers programmatic access to the Scientist.com marketplace platform. Developers servicing suppliers and client organizations can use the API to add value to marketplace. Some example applications are:</p>
 
-<p>We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
+<ul>
+<li>CRM Integration: Tight integration of supplier CRM with marketplace requests</li>
+<li>Purchasing Integration: Tight integration of client purchasing system</li>
+<li>Decision Support: Supplier provides estimator for client request in real-time</li>
+<li>Decision Support: Supplier provides context aware resources and reference material to support client request</li>
+</ul>
 
-<p>This example API documentation page was created with <a href="https://github.com/lord/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&#39;s documentation.</p>
-<h1 id='authentication'>Authentication</h1>
+<p>To use the API you first authenticate using <a href="#authentication">OAuth2</a>.</p>
+<h1 id='location'>Location</h1><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'ScientistApIV1'</span>
+
+ <span class="c1"># use the CLIENT_ID and CLIENT_SECRET tokens when you create your application</span>
+ <span class="n">api</span> <span class="o">=</span> <span class="no">ScientistApIV1</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="no">CLIENT_ID</span><span class="p">,</span> <span class="no">CLIENT_SECRET</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code> <span class="c"># Request a bearer Authorization Code</span>
+ <span class="c"># embed the tokens in the encrypted token grant request</span>
+ curl <span class="s2">"https://CLIENT_ID:CLIENT_SECRET@app.scientist.com/oauth/token?grant_type=client_credentials"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">ScientistApIV1</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'ScientistApIV1'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">ScientistApIV1</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="nx">CLIENT_ID</span><span class="p">,</span> <span class="nx">CLIENT_SECRET</span><span class="p">);</span>
+</code></pre>
+<p>The Scientist.com API is accessible at whatever website you use to access the marketplace. </p>
+
+<ul>
+<li>https://app.scientist.com/api/v1/<a href="Public%20marketplace">resource</a></li>
+<li>https://custom.scientist.com/api/v1/<a href="Private%20marketplace">resource</a></li>
+<li>https://backoffice.scientist.com/api/v1/<a href="Backoffice">resource</a></li>
+</ul>
+
+<p>For <code>/api/v2</code> and subsequent API versions substitute <code>v2</code> for <code>v1</code> in the above examples.</p>
+<h1 id='authentication'>Authentication</h1><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'ScientistApIV1'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">ScientistApIV1</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code> <span class="c"># With shell, replace the [bearer_token] with the the token response from the grant request</span>
+ curl --header <span class="s2">"Authorization: Bearer [bearer_token]"</span> https://app.scientist.com/api/[resource].json
+
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">ScientistApIV1</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'ScientistApIV1'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">ScientistApIV1</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">);</span>
+</code></pre>
+<p>Authentication on the Scientist.com platform is a two-step process.</p>
+
+<ul>
+<li>Create an Application using your Scientist.com account to generate <code>CLIENT_ID</code> and <code>CLIENT_SECRET</code> codes unique to your application</li>
+<li>Use these codes to request an <code>Authorizaton Code</code></li>
+</ul>
+<h2 id='create-marketplace-application'>Create marketplace application</h2>
+<p>To authenticate an application developers first &quot;create&quot; the application using their Scientist.com account as follows:</p>
+
+<ol>
+<li>Log in to your Scientist account and click Dashboard</li>
+<li>Click Edit My Profile</li>
+<li>Choose the Applications tab</li>
+<li>Click New Application</li>
+<li>Fill in the fields as appropriate and click Create</li>
+</ol>
+
+<p>Once created, click Show to obtain your <code>CLIENT_ID</code> and <code>CLIENT_SECRET</code>.</p>
+
 <blockquote>
 <p>To authorize, use this code:</p>
-</blockquote>
-<pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre><pre class="highlight shell tab-shell"><code><span class="c"># With shell, you can just pass the correct header with each request</span>
-curl <span class="s2">"api_endpoint_here"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-</code></pre>
-<blockquote>
-<p>Make sure to replace <code>meowmeowmeow</code> with your API key.</p>
+<p>Make sure to replace <code>bearer_token</code> with your API key.</p>
 </blockquote>
 
-<p>Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our <a href="http://example.com/developers">developer portal</a>.</p>
+<p>ScientistApIV1 uses API keys to allow access to the API. You can register a new ScientistApIV1 API key at our <a href="http://app.scientist.com/developers">developer portal</a>.</p>
 
-<p>Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
+<p>ScientistApIV1 expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
 
-<p><code>Authorization: meowmeowmeow</code></p>
+<p><code>Authorization: Bearer [bearer_token]</code></p>
 
 <aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
+You must replace <code>bearer_token</code> with your personal API key.
 </aside>
-<h1 id='kittens'>Kittens</h1><h2 id='get-all-kittens'>Get All Kittens</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<h1 id='api-v1-reference'>API V1 Reference</h1><h2 id='categories'>Categories</h2><h3 id='get-all-categories'>Get All Categories</h3><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'ScientistApIV1'</span>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+<span class="n">api</span> <span class="o">=</span> <span class="no">ScientistApIV1</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">get!</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">categories</span><span class="p">.</span><span class="nf">get</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://app.scientist.com/api/categories.json"</span>
+  -H <span class="s2">"Authorization: Bearer [bearer_token]"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">ScientistApIV1</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'ScientistApIV1'</span><span class="p">);</span>
 
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
-</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">ScientistApIV1</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">);</span>
+<span class="nx">api</span><span class="p">.</span><span class="nx">categories</span><span class="p">.</span><span class="nx">get</span><span class="p">().</span><span class="nx">then</span><span class="p">(({</span><span class="nx">categories</span><span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// do something</span>
+<span class="p">});</span>
 
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">kittens</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="nx">get</span><span class="p">();</span>
+
 </code></pre>
 <blockquote>
 <p>The above command returns JSON structured like this:</p>
 </blockquote>
-<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fluffums"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calico"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
-  </span><span class="p">}</span><span class="w">
-</span><span class="p">]</span><span class="w">
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"query_time"</span><span class="p">:</span><span class="w"> </span><span class="mf">-0.001471</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"category_refs"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Drug Metabolism and Pharmacokinetics (DMPK)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"slug"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dmpk"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"parent_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"children"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Radioanalysis"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"slug"</span><span class="p">:</span><span class="w"> </span><span class="s2">"radioanalysis"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"parent_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">738</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"children"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"in vitro ADME"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"slug"</span><span class="p">:</span><span class="w"> </span><span class="s2">"in-vitro-adme"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"parent_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">738</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"children"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                        </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Drug-Drug Interactions"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"slug"</span><span class="p">:</span><span class="w"> </span><span class="s2">"drug-drug-interactions5"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"parent_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1184</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"children"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
+                        </span><span class="p">}</span><span class="w">
+                    </span><span class="p">]</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"in vivo ADME"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"slug"</span><span class="p">:</span><span class="w"> </span><span class="s2">"in-vivo-adme"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"parent_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">738</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"children"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                        </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Placental Transfer and Milk Secretion"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"slug"</span><span class="p">:</span><span class="w"> </span><span class="s2">"placental-transfer-and-milk-secretion"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"parent_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1183</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"children"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
+                        </span><span class="p">},</span><span class="w">
+                        </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"QWBA / Tissue Distribution"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"slug"</span><span class="p">:</span><span class="w"> </span><span class="s2">"qwba-tissue-distribution"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"parent_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1183</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"children"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
+                        </span><span class="p">},</span><span class="w">
+                        </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Excretion, Mass Balance, and Expired Air"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"slug"</span><span class="p">:</span><span class="w"> </span><span class="s2">"excretion-mass-balance-and-expired-air"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"parent_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1183</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"children"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
+                        </span><span class="p">},</span><span class="w">
+                        </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Surgical Models"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"slug"</span><span class="p">:</span><span class="w"> </span><span class="s2">"surgical-models"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"parent_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1183</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"children"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
+                        </span><span class="p">}</span><span class="w">
+                    </span><span class="p">]</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+            </span><span class="p">]</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
 </span></code></pre>
-<p>This endpoint retrieves all kittens.</p>
-<h3 id='http-request'>HTTP Request</h3>
-<p><code>GET http://example.com/api/kittens</code></p>
-<h3 id='query-parameters'>Query Parameters</h3>
+<p>This endpoint retrieves all categories.</p>
+
+<p><em>HTTP Request</em></p>
+
+<p><code>GET http://app.scientist.com/api/v1/categories.json</code></p>
+<h3 id='get-a-specific-category'>Get A Specific Category</h3><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'ScientistApIV1'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">ScientistApIV1</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">get!</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">,</span> <span class="p">{</span><span class="s1">'q'</span> <span class="o">=&gt;</span> <span class="s1">'radioanalysis'</span><span class="p">})</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">categories</span><span class="p">.</span><span class="nf">get</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://app.scientist.com/api/categories.json?q=radioanalysis"</span>
+  -H <span class="s2">"Authorization: Bearer [bearer_token]"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">ScientistApIV1</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'ScientistApIV1'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">ScientistApIV1</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">);</span>
+<span class="nx">api</span><span class="p">.</span><span class="nx">categories</span><span class="p">.</span><span class="nx">get</span><span class="p">({</span><span class="na">q</span><span class="p">:</span> <span class="s1">'radioanalysis'</span><span class="p">}).</span><span class="nx">then</span><span class="p">(({</span><span class="nx">categories</span><span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// do something</span>
+<span class="p">});</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"query_time"</span><span class="p">:</span><span class="w"> </span><span class="mf">-0.000159</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"category_refs"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Radioanalysis"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"slug"</span><span class="p">:</span><span class="w"> </span><span class="s2">"radioanalysis"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"parent_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">738</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"children"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves all categories.</p>
+
+<p><em>HTTP Request</em></p>
+
+<p><code>GET http://app.scientist.com/api/v1/categories.json?q=radioanalysis</code></p>
+
+<p><em>Query Parameters</em></p>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -336,103 +554,942 @@ You must replace <code>meowmeowmeow</code> with your personal API key.
 </tr>
 </thead><tbody>
 <tr>
-<td>include_cats</td>
-<td>false</td>
-<td>If set to true, the result will also include cats.</td>
-</tr>
-<tr>
-<td>available</td>
-<td>true</td>
-<td>If set to false, the result will include kittens that have already been adopted.</td>
+<td>q</td>
+<td>none</td>
+<td>Returns the category corresponding to a valid <code>slug</code></td>
 </tr>
 </tbody></table>
 
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
+<aside class="notice">
+The V1 API returns an empty array when the requested category is not found.
 </aside>
-<h2 id='get-a-specific-kitten'>Get a Specific Kitten</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<h2 id='dynamic-forms'>Dynamic Forms</h2><h3 id='get-a-dynamic-form-by-id'>Get A Dynamic Form by :id</h3><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'ScientistApIV1'</span>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+<span class="n">api</span> <span class="o">=</span> <span class="no">ScientistApIV1</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">get!</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">dynamic_form</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="ss">id: </span><span class="n">form_id</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://app.scientist.com/api/dyanmic_form/:form_id.json"</span>
+  -H <span class="s2">"Authorization: Bearer [bearer_token]"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">ScientistApIV1</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'ScientistApIV1'</span><span class="p">);</span>
 
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">ScientistApIV1</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">);</span>
+<span class="nx">api</span><span class="p">.</span><span class="nx">dynamic_form</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span> <span class="nx">form_id</span> <span class="p">).</span><span class="nx">then</span><span class="p">(({</span><span class="nx">form</span><span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// do something</span>
+<span class="p">});</span>
 
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+
 </code></pre>
 <blockquote>
 <p>The above command returns JSON structured like this:</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<p>This endpoint retrieves a specific kitten.</p>
+<p>This endpoint retrieves a specific form by its identifier.</p>
 
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
-<h3 id='http-request-2'>HTTP Request</h3>
-<p><code>GET http://example.com/kittens/&lt;ID&gt;</code></p>
-<h3 id='url-parameters'>URL Parameters</h3>
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>ID</td>
-<td>The ID of the kitten to retrieve</td>
-</tr>
-</tbody></table>
-<h2 id='delete-a-specific-kitten'>Delete a Specific Kitten</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<p><em>HTTP Request</em></p>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+<p><code>GET http://app.scientist.com/api/v1/dynamic_form/:form_id.json</code></p>
+<h2 id='organizations'>Organizations</h2><h3 id='get-all-organizations'>Get All Organizations</h3><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'ScientistApIV1'</span>
 
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  -X DELETE
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+<span class="n">api</span> <span class="o">=</span> <span class="no">ScientistApIV1</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">get!</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">organizations</span><span class="p">.</span><span class="nf">get</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://app.scientist.com/api/organizations.json"</span>
+  -H <span class="s2">"Authorization: Bearer [bearer_token]"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">ScientistApIV1</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'ScientistApIV1'</span><span class="p">);</span>
 
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">ScientistApIV1</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">);</span>
+<span class="nx">api</span><span class="p">.</span><span class="nx">organizations</span><span class="p">.</span><span class="nx">get</span><span class="p">().</span><span class="nx">then</span><span class="p">(({</span><span class="nx">organizations</span><span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// do something</span>
+<span class="p">});</span>
+
+
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"98470754-d263-456f-9361-81fa309699ea"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Swalife Biotech"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"subdomain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dev"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"scientist.com"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"tag_line"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Outsource everything but the genius&amp;trade;"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"standard-logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://rx-organization-assets-development-eu-central-1.s3.amazonaws.com/logos/98470754-d263-456f-9361-81fa309699ea/standard-logo?1572364134"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"square-logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://rx-organization-assets-development-eu-central-1.s3.amazonaws.com/logos/98470754-d263-456f-9361-81fa309699ea/square-logo?1572364134"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://rx.lvh.me:3000"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"86b762c9-3453-4896-977d-09c4e8cca3ef"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Y B chavan pharmacy college "</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"subdomain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"app"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"scientist.com"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"tag_line"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Outsource everything but the genius&amp;trade;"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"standard-logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://rx-organization-assets-development-eu-central-1.s3.amazonaws.com/logos/86b762c9-3453-4896-977d-09c4e8cca3ef/standard-logo?1572364134"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"square-logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://rx-organization-assets-development-eu-central-1.s3.amazonaws.com/logos/86b762c9-3453-4896-977d-09c4e8cca3ef/square-logo?1572364134"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://rx.lvh.me:3000"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves all organizations.</p>
+
+<p><em>HTTP Request</em></p>
+
+<p><code>GET http://app.scientist.com/api/v1/organizations.json</code></p>
+<h3 id='get-default-organization'>Get Default Organization</h3><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'ScientistApIV1'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">ScientistApIV1</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">get!</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">organizations</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="s1">'default'</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://app.scientist.com/api/organizations/default.json"</span>
+  -H <span class="s2">"Authorization: Bearer [bearer_token]"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">ScientistApIV1</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'ScientistApIV1'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">ScientistApIV1</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">);</span>
+<span class="nx">api</span><span class="p">.</span><span class="nx">organizations</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">'default'</span><span class="p">).</span><span class="nx">then</span><span class="p">(({</span><span class="nx">organizations</span><span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// do something</span>
+<span class="p">});</span>
+
+
 </code></pre>
 <blockquote>
 <p>The above command returns JSON structured like this:</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"deleted"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">":("</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"98470754-d263-456f-9361-81fa309699ea"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Swalife Biotech"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"subdomain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dev"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"scientist.com"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"tag_line"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Outsource everything but the genius&amp;trade;"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"standard-logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://rx-organization-assets-development-eu-central-1.s3.amazonaws.com/logos/98470754-d263-456f-9361-81fa309699ea/standard-logo?1572364564"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"square-logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://rx-organization-assets-development-eu-central-1.s3.amazonaws.com/logos/98470754-d263-456f-9361-81fa309699ea/square-logo?1572364564"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://rx.lvh.me:3000"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<p>This endpoint deletes a specific kitten.</p>
-<h3 id='http-request-3'>HTTP Request</h3>
-<p><code>DELETE http://example.com/kittens/&lt;ID&gt;</code></p>
-<h3 id='url-parameters-2'>URL Parameters</h3>
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>ID</td>
-<td>The ID of the kitten to delete</td>
-</tr>
-</tbody></table>
-<h1 id='errors'>Errors</h1>
+<p>This endpoint retrieves the &quot;default&quot; organization.</p>
+
+<p><em>HTTP Request</em></p>
+
+<p><code>GET http://app.scientist.com/api/v1/organizations/default.json</code></p>
+<h3 id='get-current-organization'>Get Current Organization</h3><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'ScientistApIV1'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">ScientistApIV1</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">get!</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">organizations</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="s1">'current'</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://app.scientist.com/api/organizations/current.json"</span>
+  -H <span class="s2">"Authorization: Bearer [bearer_token]"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">ScientistApIV1</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'ScientistApIV1'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">ScientistApIV1</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">);</span>
+<span class="nx">api</span><span class="p">.</span><span class="nx">organizations</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">'current'</span><span class="p">).</span><span class="nx">then</span><span class="p">(({</span><span class="nx">organizations</span><span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// do something</span>
+<span class="p">});</span>
+
+
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"98470754-d263-456f-9361-81fa309699ea"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Swalife Biotech"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"subdomain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dev"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"scientist.com"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"tag_line"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Outsource everything but the genius&amp;trade;"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"standard-logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://rx-organization-assets-development-eu-central-1.s3.amazonaws.com/logos/98470754-d263-456f-9361-81fa309699ea/standard-logo?1572364653"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"square-logo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://rx-organization-assets-development-eu-central-1.s3.amazonaws.com/logos/98470754-d263-456f-9361-81fa309699ea/square-logo?1572364653"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://rx.lvh.me:3000"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves the &quot;current&quot; organization.</p>
+
+<p><em>HTTP Request</em></p>
+
+<p><code>GET http://app.scientist.com/api/v1/organizations/current.json</code></p>
+<h2 id='providers'>Providers</h2><h3 id='get-all-providers'>Get All Providers</h3><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'ScientistApIV1'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">ScientistApIV1</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">get!</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">providers</span><span class="p">.</span><span class="nf">get</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://app.scientist.com/api/providers.json"</span>
+  -H <span class="s2">"Authorization: Bearer [bearer_token]"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">ScientistApIV1</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'ScientistApIV1'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">ScientistApIV1</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">).</span><span class="nx">then</span><span class="p">(({</span><span class="nx">api</span><span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">api</span><span class="p">.</span><span class="nx">providers</span><span class="p">.</span><span class="nx">get</span><span class="p">().</span><span class="nx">then</span><span class="p">(({</span><span class="nx">providers</span><span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="c1">// do something</span>
+    <span class="p">});</span>
+<span class="p">});</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"total"</span><span class="p">:</span><span class="w"> </span><span class="mi">17683</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"page"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"per_page"</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"query_time"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.451113</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"provider_refs"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2074</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"25e443c4-8a04-4967-bb91-d3887f6f4cfd"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"slug"</span><span class="p">:</span><span class="w"> </span><span class="s2">"takii-company-ltd"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Takii &amp; Company Ltd."</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"snippet_plain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Takii was established ...."</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"snippet"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Takii was established in 1835, starting as a seed store, ...."</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"html_snippet"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;p&gt;Takii was established in 1835, starting as a seed store, ...&lt;/p&gt;"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"html_description"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"average_rating"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"permission"</span><span class="p">:</span><span class="w"> </span><span class="s2">"database-only"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"locations"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+            </span><span class="s2">"urls"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"storefront"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://app.scientist.com/wares/make-a-request/quote_groups/new?provider=Takii+&amp;+Company+Ltd.&amp;name=Takii+&amp;+Company+Ltd."</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"backoffice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://backoffice-staging.scientist.com/providers/takii-company-ltd/edit"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="s2">"score"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.0</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"facets"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"provisional"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">17683</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"doc_count_error_upper_bound"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sum_other_doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"buckets"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"key"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"key_as_string"</span><span class="p">:</span><span class="w"> </span><span class="s2">"false"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">17683</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+            </span><span class="p">]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"beacon_ids"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">17683</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"doc_count_error_upper_bound"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sum_other_doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"buckets"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"countries_facet"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">17683</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"doc_count_error_upper_bound"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sum_other_doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"buckets"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"contract_status"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">17683</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"doc_count_error_upper_bound"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sum_other_doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"buckets"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Not signed up"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">14946</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Signed up"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">2655</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Pending agreement"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">82</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+            </span><span class="p">]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"total_requests_completed"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">17683</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"doc_count_error_upper_bound"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sum_other_doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"buckets"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"key"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">16798</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"key"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">365</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+            </span><span class="p">]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"annotation_names"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">17683</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"doc_count_error_upper_bound"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sum_other_doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"buckets"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"source"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">17683</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"doc_count_error_upper_bound"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sum_other_doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"buckets"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"External"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">17683</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+            </span><span class="p">]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"certifications"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">17683</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"doc_count_error_upper_bound"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sum_other_doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"buckets"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"builtin_annotations"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">17683</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"doc_count_error_upper_bound"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sum_other_doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"buckets"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"This supplier has agreed to the Scientist.com Supplier Agreement"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">2655</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+            </span><span class="p">]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"starts_with"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">17683</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"doc_count_error_upper_bound"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sum_other_doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"buckets"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"a"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">1821</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"u"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">1770</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+            </span><span class="p">]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"signed_legal_documents"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">17683</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"doc_count_error_upper_bound"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sum_other_doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"buckets"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"diversity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">17683</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"doc_count_error_upper_bound"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sum_other_doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"buckets"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"states_facet"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">17683</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"doc_count_error_upper_bound"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sum_other_doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"buckets"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"type_of_company_description"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">17683</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"doc_count_error_upper_bound"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sum_other_doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"buckets"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Small Business (1-10M TTM Revenue)"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">11786</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Academic Core Facility"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">3895</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"New Startup (0-1M TTM Revenue)"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">1207</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mid-Sized Business (10-100M TTM Revenue)"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">583</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Large Business (&gt;100M TTM Revenue)"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">109</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Consultant"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"doc_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">49</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+            </span><span class="p">]</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves all providers.</p>
+
+<p><em>HTTP Request</em></p>
+
+<p><code>GET http://app.scientist.com/api/v1/providers.json</code></p>
+<h3 id='get-a-specific-provider'>Get A Specific Provider</h3><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'ScientistApIV1'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">ScientistApIV1</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">get!</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">providers</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="ss">slug: </span><span class="s1">'takii-company-ltd'</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://app.scientist.com/api/providers/takii-company-ltd.json"</span>
+  -H <span class="s2">"Authorization: Bearer [bearer_token]"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">ScientistApIV1</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'ScientistApIV1'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">ScientistApIV1</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">).</span><span class="nx">then</span><span class="p">(({</span><span class="nx">api</span><span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">api</span><span class="p">.</span><span class="nx">providers</span><span class="p">.</span><span class="nx">get</span><span class="p">({</span><span class="na">slug</span><span class="p">:</span> <span class="s1">'takii-company-ltd'</span><span class="p">}).</span><span class="nx">then</span><span class="p">(({</span><span class="nx">providers</span><span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="c1">// do something</span>
+    <span class="p">});</span>
+<span class="p">});</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"query_time"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.009415</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"provider"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2074</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Takii &amp; Company Ltd."</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"official_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"slug"</span><span class="p">:</span><span class="w"> </span><span class="s2">"takii-company-ltd"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"for_origin"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"snippet"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Takii was established in 1835, starting as a seed store, ..."</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"agreed_to_vendor_terms_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"contract_pending"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"phone_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"81-(0)75-365-0123"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"contact_emails"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="s2">"unregistered@assaydepot.com"</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="s2">"sales_email"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"accounting_email"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"tax_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"duns_number"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"website"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.takiiseed.com/"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"year_established"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1835"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"number_of_employees"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"type_of_company"</span><span class="p">:</span><span class="w"> </span><span class="s2">"new-startup"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"core_facility"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"plan"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"commissions"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"acme"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"permissions"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"acme"</span><span class="p">:</span><span class="w"> </span><span class="s2">"none"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"provisional"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"protect_profile"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"top_rated"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"payment_terms"</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span><span class="w">
+        </span><span class="s2">"backoffice_setup"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="s2">"Create Account"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"Agree to Terms"</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="s2">"certifications"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+        </span><span class="s2">"professional_associations"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="s2">""</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="s2">"service_areas"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+        </span><span class="s2">"laboratories"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+        </span><span class="s2">"redirects"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+        </span><span class="s2">"cached_representative_gsls"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+        </span><span class="s2">"cached_representative_gsls_updated_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"logo_filename"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"media"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+        </span><span class="s2">"removed_files"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+        </span><span class="s2">"small_biz"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"veteran_owned"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"disadvantaged"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"woman_owned"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"disadvantaged_woman_owned"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"hub_zone"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"none_diversity"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"total_requests"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"total_requests_completed"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"cxml_order_routing"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"cxml_order_routing_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"cxml_order_domain_type"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"cxml_order_identity"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"headquarters_address_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">295285</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"gsl_selection_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-07-28T12:51:28.000Z"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-06-18T03:39:15.156Z"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"25e443c4-8a04-4967-bb91-d3887f6f4cfd"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"couch_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"176e454f72fa9fdc568821d5559f896b"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"origin"</span><span class="p">:</span><span class="w"> </span><span class="s2">"central"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"access"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+        </span><span class="s2">"rxs_with_annotations"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="s2">"default"</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="s2">"score"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"tier"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"snippet_plain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Takii was established in 1835, starting as a seed store, ..."</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"builtin_annotations"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves a provider indexed by a <code>:slug</code> returne from a prior response.</p>
+
+<p><em>HTTP Request</em></p>
+
+<p><code>GET http://app.scientist.com/api/v1/providers/:slug.json</code></p>
+
+<aside class="notice">
+The V1 API returns a `code: 404` in the response body when the requested provider is not found.
+</aside>
+<h2 id='providers-wares'>Providers Wares</h2><h3 id='get-quot-wares-quot-for-a-specific-provider'>Get &quot;Wares&quot; for a specific Provider</h3><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'ScientistApIV1'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">ScientistApIV1</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">get!</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">providers_wares</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span> <span class="n">provider_id</span> <span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://app.scientist.com/api/providers/:provider_id/wares.json"</span>
+  -H <span class="s2">"Authorization: Bearer [bearer_token]"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">ScientistApIV1</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'ScientistApIV1'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">ScientistApIV1</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">);</span>
+<span class="nx">api</span><span class="p">.</span><span class="nx">providers_wares</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span> <span class="nx">provider_id</span> <span class="p">).</span><span class="nx">then</span><span class="p">(({</span><span class="nx">organizations</span><span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// do something</span>
+<span class="p">});</span>
+
+
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+   </span><span class="s2">"total"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"page"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"per_page"</span><span class="p">:</span><span class="mi">100</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"query_time"</span><span class="p">:</span><span class="mf">0.05264</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"ware_refs"</span><span class="p">:[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+         </span><span class="s2">"currency"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"id"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"beacon_ids"</span><span class="p">:[</span><span class="w">
+
+         </span><span class="p">],</span><span class="w">
+         </span><span class="s2">"catalog_id"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"name"</span><span class="p">:</span><span class="s2">"Anthony Smythe"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"price"</span><span class="p">:</span><span class="mf">0.0</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"promo_image"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"provider_ids"</span><span class="p">:[</span><span class="w">
+            </span><span class="mi">2</span><span class="p">,</span><span class="w">
+            </span><span class="mi">2</span><span class="w">
+         </span><span class="p">],</span><span class="w">
+         </span><span class="s2">"provider_names"</span><span class="p">:[</span><span class="w">
+            </span><span class="s2">"Feest Inc--2"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"Feest Inc--2"</span><span class="w">
+         </span><span class="p">],</span><span class="w">
+         </span><span class="s2">"slug"</span><span class="p">:</span><span class="s2">"anthony-smythe1"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"snippet"</span><span class="p">:</span><span class="s2">"He's going everywhere, B.J. McKay and his best friend Bear. </span><span class="se">\n\n</span><span class="s2">"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"sort_value"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"turn_around_time"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"ware_type"</span><span class="p">:</span><span class="s2">"Product"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"created_at"</span><span class="p">:</span><span class="s2">"2019-10-29T16:23:28.189Z"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="s2">"2019-10-29T16:23:28.189Z"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+   </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves ware references for a specific provider :id.</p>
+
+<p><em>HTTP Request</em></p>
+
+<p><code>GET http://app.scientist.com/api/v1/providers/:provider_id/wares.json</code></p>
+<h2 id='quote-groups'>Quote Groups</h2><h3 id='get-quote-group-by-a-specific-identifier'>Get Quote Group by a specific identifier</h3><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'ScientistApIV1'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">ScientistApIV1</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">get!</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">quote_group</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="ss">id: </span><span class="n">quote_group_id</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://app.scientist.com/api/quote_gropus/:quote_group_id.json"</span>
+  -H <span class="s2">"Authorization: Bearer [bearer_token]"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">ScientistApIV1</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'ScientistApIV1'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">ScientistApIV1</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">);</span>
+<span class="nx">api</span><span class="p">.</span><span class="nx">quote_group</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span> <span class="nx">quote_group_id</span> <span class="p">).</span><span class="nx">then</span><span class="p">(({</span><span class="nx">quote_group</span><span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// do something</span>
+<span class="p">});</span>
+
+
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+   </span><span class="s2">"result"</span><span class="p">:{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"_id"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"followers"</span><span class="p">:[</span><span class="w">
+
+      </span><span class="p">],</span><span class="w">
+      </span><span class="s2">"assignees"</span><span class="p">:[</span><span class="w">
+
+      </span><span class="p">],</span><span class="w">
+      </span><span class="s2">"customer_accounting_email"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"beacon_ids"</span><span class="p">:[</span><span class="w">
+
+      </span><span class="p">],</span><span class="w">
+      </span><span class="s2">"acceptable_currencies"</span><span class="p">:[</span><span class="w">
+
+      </span><span class="p">],</span><span class="w">
+      </span><span class="s2">"client_id"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"site"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"therapeutic_area"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"promo_code"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="s2">"Test QuoteGroup"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="s2">"</span><span class="se">\u</span><span class="s2">003cp</span><span class="se">\u</span><span class="s2">003ePants</span><span class="se">\u</span><span class="s2">003c/p</span><span class="se">\u</span><span class="s2">003e"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"data"</span><span class="p">:{</span><span class="w">
+
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"dynamic_forms"</span><span class="p">:[</span><span class="w">
+
+      </span><span class="p">],</span><span class="w">
+      </span><span class="s2">"consolidated_billing"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"manager_purchase_only"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"scanned_signature_required"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"providers_visible"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"purchase_more"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"state"</span><span class="p">:</span><span class="s2">"Internal Review"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"closed"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"cancelled"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"on_hold"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"status"</span><span class="p">:</span><span class="s2">"Internal Review"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"billing_same_as_shipping"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"ordered_at"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"placed_at"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"exclude_from_reporting"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"reason_for_cancelling"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"proposed_deadline"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="s2">"2019-10-29T16:48:16.873Z"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"created_at"</span><span class="p">:</span><span class="s2">"2019-10-29T16:48:16.873Z"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"user"</span><span class="p">:{</span><span class="w">
+         </span><span class="s2">"first_name"</span><span class="p">:</span><span class="s2">"Gladyce"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"last_name"</span><span class="p">:</span><span class="s2">"Hegmann"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"email"</span><span class="p">:</span><span class="s2">"gladyce4@scientist.com"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"title"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"company"</span><span class="p">:</span><span class="s2">"Assay Depot"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"site"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"discipline"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"id"</span><span class="p">:</span><span class="mi">5</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"shipping_address"</span><span class="p">:{</span><span class="w">
+         </span><span class="s2">"id"</span><span class="p">:</span><span class="mi">9</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"organization_name"</span><span class="p">:</span><span class="s2">"org name"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"street"</span><span class="p">:</span><span class="s2">"1219 Bashirian Mount"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"street2"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"city"</span><span class="p">:</span><span class="s2">"Llewellynmouth"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"state"</span><span class="p">:</span><span class="s2">"MT"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"zipcode"</span><span class="p">:</span><span class="s2">"66372-9899"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"country"</span><span class="p">:</span><span class="s2">"CD"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"latitude"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"longitude"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"name"</span><span class="p">:</span><span class="s2">"provider name"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"attention"</span><span class="p">:</span><span class="s2">"attention line"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"person_name"</span><span class="p">:</span><span class="s2">"person name"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"care_of"</span><span class="p">:</span><span class="s2">"care of person"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"text"</span><span class="p">:</span><span class="s2">"1219 Bashirian Mount</span><span class="se">\n</span><span class="s2">Llewellynmouth, MT, 66372-9899</span><span class="se">\n</span><span class="s2">Congo (Dem. Rep.)"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"ware_ref"</span><span class="p">:{</span><span class="w">
+         </span><span class="s2">"id"</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"slug"</span><span class="p">:</span><span class="s2">"polly-jeffries62"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"name"</span><span class="p">:</span><span class="s2">"Polly Jeffries"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"price"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"type"</span><span class="p">:</span><span class="s2">"Product"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"turn_around_time"</span><span class="p">:{</span><span class="w">
+            </span><span class="s2">"table"</span><span class="p">:{</span><span class="w">
+
+            </span><span class="p">}</span><span class="w">
+         </span><span class="p">},</span><span class="w">
+         </span><span class="s2">"snippet"</span><span class="p">:</span><span class="s2">"Down the road that's where I'll always be. Every stop I make I make a new friend; Can't stay for long just turn around and I'm gone again. </span><span class="se">\n\n</span><span class="s2">"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"html_snippet"</span><span class="p">:</span><span class="s2">"</span><span class="se">\u</span><span class="s2">003cp</span><span class="se">\u</span><span class="s2">003eDown the road that</span><span class="se">\u</span><span class="s2">0026#8217;s where I</span><span class="se">\u</span><span class="s2">0026#8217;ll always be. Every stop I make I make a new friend; Can</span><span class="se">\u</span><span class="s2">0026#8217;t stay for long just turn around and I</span><span class="se">\u</span><span class="s2">0026#8217;m gone again.</span><span class="se">\u</span><span class="s2">003c/p</span><span class="se">\u</span><span class="s2">003e"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"providers"</span><span class="p">:[</span><span class="w">
+
+         </span><span class="p">],</span><span class="w">
+         </span><span class="s2">"urls"</span><span class="p">:{</span><span class="w">
+            </span><span class="s2">"storefront"</span><span class="p">:</span><span class="s2">"https://app.scientist.com/wares/polly-jeffries62/quote_groups/new"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"backoffice"</span><span class="p">:</span><span class="s2">"https://backoffice-staging.scientist.com/wares/polly-jeffries62/edit"</span><span class="w">
+         </span><span class="p">}</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="s2">"location"</span><span class="p">:</span><span class="s2">"http://localhost:3000/api/v1/quote_groups/94cc2e8d-0a7e-4d1c-bf9d-fb2f8b22288b"</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"query_time"</span><span class="p">:</span><span class="mf">0.007109</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves quote groups associated with a specific quote group identifier.</p>
+
+<p><em>HTTP Request</em></p>
+
+<p><code>GET http://app.scientist.com/api/v1/quote_groups/:quote_group_id.json</code></p>
+<h3 id='get-quote-groups-associated-with-api-user'>Get Quote Groups Associated with API User</h3><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'ScientistApIV1'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">ScientistApIV1</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">get!</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">quote_group</span><span class="p">.</span><span class="nf">get</span><span class="p">()</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://app.scientist.com/api/quote_groups/mine.json"</span>
+  -H <span class="s2">"Authorization: Bearer [bearer_token]"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">ScientistApIV1</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'ScientistApIV1'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">ScientistApIV1</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">);</span>
+<span class="nx">api</span><span class="p">.</span><span class="nx">quote_group</span><span class="p">.</span><span class="nx">get</span><span class="p">().</span><span class="nx">then</span><span class="p">(({</span><span class="nx">quote_group</span><span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// do something</span>
+<span class="p">});</span>
+
+
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+   </span><span class="s2">"quote_group_refs"</span><span class="p">:[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+         </span><span class="s2">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"_id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"followers"</span><span class="p">:[</span><span class="w">
+
+         </span><span class="p">],</span><span class="w">
+         </span><span class="s2">"assignees"</span><span class="p">:[</span><span class="w">
+
+         </span><span class="p">],</span><span class="w">
+         </span><span class="s2">"customer_accounting_email"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"beacon_ids"</span><span class="p">:[</span><span class="w">
+
+         </span><span class="p">],</span><span class="w">
+         </span><span class="s2">"acceptable_currencies"</span><span class="p">:[</span><span class="w">
+
+         </span><span class="p">],</span><span class="w">
+         </span><span class="s2">"client_id"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"site"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"therapeutic_area"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"promo_code"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"name"</span><span class="p">:</span><span class="s2">"Test QuoteGroup"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"description"</span><span class="p">:</span><span class="s2">"</span><span class="se">\u</span><span class="s2">003cp</span><span class="se">\u</span><span class="s2">003ePants</span><span class="se">\u</span><span class="s2">003c/p</span><span class="se">\u</span><span class="s2">003e"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"data"</span><span class="p">:{</span><span class="w">
+
+         </span><span class="p">},</span><span class="w">
+         </span><span class="s2">"dynamic_forms"</span><span class="p">:[</span><span class="w">
+
+         </span><span class="p">],</span><span class="w">
+         </span><span class="s2">"consolidated_billing"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"manager_purchase_only"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"scanned_signature_required"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"providers_visible"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"purchase_more"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"state"</span><span class="p">:</span><span class="s2">"Internal Review"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"closed"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"cancelled"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"on_hold"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"status"</span><span class="p">:</span><span class="s2">"Internal Review"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"billing_same_as_shipping"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"ordered_at"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"placed_at"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"exclude_from_reporting"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"reason_for_cancelling"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"proposed_deadline"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="s2">"2019-10-29T16:54:00.260Z"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"created_at"</span><span class="p">:</span><span class="s2">"2019-10-29T16:54:00.260Z"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"user"</span><span class="p">:{</span><span class="w">
+            </span><span class="s2">"first_name"</span><span class="p">:</span><span class="s2">"Luz"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"last_name"</span><span class="p">:</span><span class="s2">"Ebert"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"email"</span><span class="p">:</span><span class="s2">"luz2@scientist.com"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"title"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"company"</span><span class="p">:</span><span class="s2">"Assay Depot"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"site"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"discipline"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="mi">3</span><span class="w">
+         </span><span class="p">},</span><span class="w">
+         </span><span class="s2">"shipping_address"</span><span class="p">:{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"organization_name"</span><span class="p">:</span><span class="s2">"org name"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"street"</span><span class="p">:</span><span class="s2">"858 Mavis Trace"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"street2"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"city"</span><span class="p">:</span><span class="s2">"New Candida"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"state"</span><span class="p">:</span><span class="s2">"AZ"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"zipcode"</span><span class="p">:</span><span class="s2">"50327-5628"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"country"</span><span class="p">:</span><span class="s2">"LR"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"latitude"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"longitude"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="s2">"provider name"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"attention"</span><span class="p">:</span><span class="s2">"attention line"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"person_name"</span><span class="p">:</span><span class="s2">"person name"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"care_of"</span><span class="p">:</span><span class="s2">"care of person"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"text"</span><span class="p">:</span><span class="s2">"858 Mavis Trace</span><span class="se">\n</span><span class="s2">New Candida, AZ, 50327-5628</span><span class="se">\n</span><span class="s2">Liberia"</span><span class="w">
+         </span><span class="p">},</span><span class="w">
+         </span><span class="s2">"ware_ref"</span><span class="p">:{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"slug"</span><span class="p">:</span><span class="s2">"lucy-wilson"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="s2">"Lucy Wilson"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"price"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"type"</span><span class="p">:</span><span class="s2">"Product"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"turn_around_time"</span><span class="p">:{</span><span class="w">
+               </span><span class="s2">"table"</span><span class="p">:{</span><span class="w">
+
+               </span><span class="p">}</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="s2">"snippet"</span><span class="p">:</span><span class="s2">"He's going everywhere, B.J. McKay and his best friend Bear. Who says you have to call just one place home?. </span><span class="se">\n\n</span><span class="s2">"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"html_snippet"</span><span class="p">:</span><span class="s2">"</span><span class="se">\u</span><span class="s2">003cp</span><span class="se">\u</span><span class="s2">003eHe</span><span class="se">\u</span><span class="s2">0026#8217;s going everywhere, B.J. McKay and his best friend Bear. Who says you have to call just one place home?.</span><span class="se">\u</span><span class="s2">003c/p</span><span class="se">\u</span><span class="s2">003e"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"providers"</span><span class="p">:[</span><span class="w">
+
+            </span><span class="p">],</span><span class="w">
+            </span><span class="s2">"urls"</span><span class="p">:{</span><span class="w">
+               </span><span class="s2">"storefront"</span><span class="p">:</span><span class="s2">"https://app.scientist.com/wares/lucy-wilson/quote_groups/new"</span><span class="p">,</span><span class="w">
+               </span><span class="s2">"backoffice"</span><span class="p">:</span><span class="s2">"https://backoffice-staging.scientist.com/wares/lucy-wilson/edit"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+         </span><span class="p">}</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+         </span><span class="s2">"id"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"_id"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"followers"</span><span class="p">:[</span><span class="w">
+
+         </span><span class="p">],</span><span class="w">
+         </span><span class="s2">"assignees"</span><span class="p">:[</span><span class="w">
+
+         </span><span class="p">],</span><span class="w">
+         </span><span class="s2">"customer_accounting_email"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"beacon_ids"</span><span class="p">:[</span><span class="w">
+
+         </span><span class="p">],</span><span class="w">
+         </span><span class="s2">"acceptable_currencies"</span><span class="p">:[</span><span class="w">
+
+         </span><span class="p">],</span><span class="w">
+         </span><span class="s2">"client_id"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"site"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"therapeutic_area"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"promo_code"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"name"</span><span class="p">:</span><span class="s2">"Test QuoteGroup"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"description"</span><span class="p">:</span><span class="s2">"</span><span class="se">\u</span><span class="s2">003cp</span><span class="se">\u</span><span class="s2">003ePants</span><span class="se">\u</span><span class="s2">003c/p</span><span class="se">\u</span><span class="s2">003e"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"data"</span><span class="p">:{</span><span class="w">
+
+         </span><span class="p">},</span><span class="w">
+         </span><span class="s2">"dynamic_forms"</span><span class="p">:[</span><span class="w">
+
+         </span><span class="p">],</span><span class="w">
+         </span><span class="s2">"consolidated_billing"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"manager_purchase_only"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"scanned_signature_required"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"providers_visible"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"purchase_more"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"state"</span><span class="p">:</span><span class="s2">"Internal Review"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"closed"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"cancelled"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"on_hold"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"status"</span><span class="p">:</span><span class="s2">"Internal Review"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"billing_same_as_shipping"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"ordered_at"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"placed_at"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"exclude_from_reporting"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"reason_for_cancelling"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"proposed_deadline"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="s2">"2019-10-29T16:54:04.421Z"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"created_at"</span><span class="p">:</span><span class="s2">"2019-10-29T16:54:04.421Z"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"user"</span><span class="p">:{</span><span class="w">
+            </span><span class="s2">"first_name"</span><span class="p">:</span><span class="s2">"Luz"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"last_name"</span><span class="p">:</span><span class="s2">"Ebert"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"email"</span><span class="p">:</span><span class="s2">"luz4@scientist.com"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"title"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"company"</span><span class="p">:</span><span class="s2">"Assay Depot"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"site"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"discipline"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="mi">5</span><span class="w">
+         </span><span class="p">},</span><span class="w">
+         </span><span class="s2">"shipping_address"</span><span class="p">:{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="mi">9</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"organization_name"</span><span class="p">:</span><span class="s2">"org name"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"street"</span><span class="p">:</span><span class="s2">"858 Mavis Trace"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"street2"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"city"</span><span class="p">:</span><span class="s2">"New Candida"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"state"</span><span class="p">:</span><span class="s2">"AZ"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"zipcode"</span><span class="p">:</span><span class="s2">"50327-5628"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"country"</span><span class="p">:</span><span class="s2">"LR"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"latitude"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"longitude"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="s2">"provider name"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"attention"</span><span class="p">:</span><span class="s2">"attention line"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"person_name"</span><span class="p">:</span><span class="s2">"person name"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"care_of"</span><span class="p">:</span><span class="s2">"care of person"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"text"</span><span class="p">:</span><span class="s2">"858 Mavis Trace</span><span class="se">\n</span><span class="s2">New Candida, AZ, 50327-5628</span><span class="se">\n</span><span class="s2">Liberia"</span><span class="w">
+         </span><span class="p">},</span><span class="w">
+         </span><span class="s2">"ware_ref"</span><span class="p">:{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"slug"</span><span class="p">:</span><span class="s2">"lucy-wilson7"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="s2">"Lucy Wilson"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"price"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"type"</span><span class="p">:</span><span class="s2">"Product"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"turn_around_time"</span><span class="p">:{</span><span class="w">
+               </span><span class="s2">"table"</span><span class="p">:{</span><span class="w">
+
+               </span><span class="p">}</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="s2">"snippet"</span><span class="p">:</span><span class="s2">"He's going everywhere, B.J. McKay and his best friend Bear. Who says you have to call just one place home?. </span><span class="se">\n\n</span><span class="s2">"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"html_snippet"</span><span class="p">:</span><span class="s2">"</span><span class="se">\u</span><span class="s2">003cp</span><span class="se">\u</span><span class="s2">003eHe</span><span class="se">\u</span><span class="s2">0026#8217;s going everywhere, B.J. McKay and his best friend Bear. Who says you have to call just one place home?.</span><span class="se">\u</span><span class="s2">003c/p</span><span class="se">\u</span><span class="s2">003e"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"providers"</span><span class="p">:[</span><span class="w">
+
+            </span><span class="p">],</span><span class="w">
+            </span><span class="s2">"urls"</span><span class="p">:{</span><span class="w">
+               </span><span class="s2">"storefront"</span><span class="p">:</span><span class="s2">"https://app.scientist.com/wares/lucy-wilson7/quote_groups/new"</span><span class="p">,</span><span class="w">
+               </span><span class="s2">"backoffice"</span><span class="p">:</span><span class="s2">"https://backoffice-staging.scientist.com/wares/lucy-wilson7/edit"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+         </span><span class="p">}</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+   </span><span class="p">],</span><span class="w">
+   </span><span class="s2">"pages"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"per_page"</span><span class="p">:</span><span class="mi">25</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"facets"</span><span class="p">:{</span><span class="w">
+      </span><span class="s2">"client_application"</span><span class="p">:{</span><span class="w">
+
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"requestor"</span><span class="p">:{</span><span class="w">
+         </span><span class="s2">"Luz Ebert"</span><span class="p">:</span><span class="mi">2</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"vendor"</span><span class="p">:{</span><span class="w">
+         </span><span class="s2">"Auer, Boyle and Leuschke--4"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"O'Hara, Morar and Bosco--3"</span><span class="p">:</span><span class="mi">1</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"dynamic_form_name"</span><span class="p">:{</span><span class="w">
+
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"assignee_emails"</span><span class="p">:{</span><span class="w">
+
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"status"</span><span class="p">:{</span><span class="w">
+         </span><span class="s2">"Internal Review"</span><span class="p">:</span><span class="mi">2</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="s2">"count"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"number_of_pages"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"query_time"</span><span class="p">:</span><span class="mf">0.01393</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves a list of quote groups associated with the requesting API user.</p>
+
+<p><em>HTTP Request</em></p>
+
+<p><code>GET http://app.scientist.com/api/v1/quote_groups/mine.json</code></p>
+<h3 id='add-a-note-to-a-specific-quote-group'>Add a note to a specific Quote Group</h3><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'ScientistApIV1'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">ScientistApIV1</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">get!</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">quote_group</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="ss">id: </span><span class="n">quote_group_id</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://app.scientist.com/api/quote_gropus/:quote_group_id.json"</span>
+  -H <span class="s2">"Authorization: Bearer [bearer_token]"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">ScientistApIV1</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'ScientistApIV1'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">ScientistApIV1</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">);</span>
+<span class="nx">api</span><span class="p">.</span><span class="nx">quote_group</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span> <span class="nx">quote_group_id</span> <span class="p">).</span><span class="nx">then</span><span class="p">(({</span><span class="nx">quote_group</span><span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// do something</span>
+<span class="p">});</span>
+
+
+</code></pre>
+<blockquote>
+<p>The POST body expects a JSON structure like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"quote_group"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"note"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"some title text"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"note body text"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"available_for_other_vendors"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>The above command returns JSON object with the following structure:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"msg"</span><span class="p">:</span><span class="w"> </span><span class="s2">"note save"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>Associate a note with a specific quote group identifier.</p>
+
+<p><em>HTTP Request</em></p>
+
+<p><code>POST http://app.scientist.com/api/v1/quote_groups/:quote_group_id/add_note.json</code></p>
+<h2 id='quoted-wares'>Quoted Wares</h2><h3 id='get-quoted-wares'>Get Quoted Wares</h3><h2 id='users'>Users</h2><h3 id='get-users'>Get Users</h3><h2 id='wares'>Wares</h2><h3 id='get-wares'>Get Wares</h3><h2 id='webhooks'>Webhooks</h2><h3 id='create-a-webhook'>Create a Webhook</h3><h1 id='errors'>Errors</h1>
 <aside class="notice">
 This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
 </aside>
@@ -496,7 +1553,6 @@ This error section is stored in a separate file in <code>includes/_errors.md</co
           <div class="lang-selector">
                 <a href="#" data-language-name="shell">shell</a>
                 <a href="#" data-language-name="ruby">ruby</a>
-                <a href="#" data-language-name="python">python</a>
                 <a href="#" data-language-name="javascript">javascript</a>
           </div>
       </div>

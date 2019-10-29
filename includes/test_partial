@@ -1,0 +1,3 @@
+<aside class="notice">
+The V1 API returns an empty array when the requested category is not found.
+</aside>

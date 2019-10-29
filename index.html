@@ -310,7 +310,7 @@
                     <a href="#quoted-wares" class="toc-h2 toc-link" data-title="Quoted Wares">Quoted Wares</a>
 					  <ul class="toc-list-h3">
 					      <li>
-					        <a href="#get-quoted-wares" class="toc-h3 toc-link" data-title="Get Quoted Wares">Get Quoted Wares</a>
+					        <a href="#get-quoted-wares-associated-with-the-requesting-user" class="toc-h3 toc-link" data-title="Get Quoted Wares associated with the requesting user">Get Quoted Wares associated with the requesting user</a>
 					      </li>
 					  </ul>
                   </li>
@@ -1591,7 +1591,126 @@ The V1 API returns a `code: 404` in the response body when the requested provide
 <p><em>HTTP Request</em></p>
 
 <p><code>POST http://app.scientist.com/api/v1/quote_groups/:quote_group_id/add_note.json</code></p>
-<h2 id='quoted-wares'>Quoted Wares</h2><h3 id='get-quoted-wares'>Get Quoted Wares</h3><h2 id='users'>Users</h2><h3 id='get-users'>Get Users</h3><h2 id='wares'>Wares</h2><h3 id='get-wares'>Get Wares</h3><h2 id='webhooks'>Webhooks</h2><h3 id='create-a-webhook'>Create a Webhook</h3><h1 id='errors'>Errors</h1>
+<h2 id='quoted-wares'>Quoted Wares</h2><h3 id='get-quoted-wares-associated-with-the-requesting-user'>Get Quoted Wares associated with the requesting user</h3><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'ScientistApIV1'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">ScientistApIV1</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">get!</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">quoted_wares</span><span class="p">.</span><span class="nf">get</span><span class="p">()</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://app.scientist.com/api/quoted_wares.json"</span>
+  -H <span class="s2">"Authorization: Bearer [bearer_token]"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">ScientistApIV1</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'ScientistApIV1'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">ScientistApIV1</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'bearer_token'</span><span class="p">);</span>
+<span class="nx">api</span><span class="p">.</span><span class="nx">quoted_wares</span><span class="p">.</span><span class="nx">get</span><span class="p">().</span><span class="nx">then</span><span class="p">(({</span><span class="nx">wares</span><span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// do something</span>
+<span class="p">});</span>
+
+
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+   </span><span class="s2">"total"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"page"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"per_page"</span><span class="p">:</span><span class="mi">25</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"query_time"</span><span class="p">:</span><span class="mf">0.078514</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"facets"</span><span class="p">:{</span><span class="w">
+      </span><span class="s2">"requestor_company"</span><span class="p">:{</span><span class="w">
+         </span><span class="s2">"Assay Depot"</span><span class="p">:</span><span class="mi">1</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"request_type"</span><span class="p">:{</span><span class="w">
+
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"vendor"</span><span class="p">:{</span><span class="w">
+         </span><span class="s2">"Hand-Jast--15"</span><span class="p">:</span><span class="mi">1</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"origin"</span><span class="p">:{</span><span class="w">
+         </span><span class="s2">"depot"</span><span class="p">:</span><span class="mi">1</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"assignee_emails"</span><span class="p">:{</span><span class="w">
+
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"requestor"</span><span class="p">:{</span><span class="w">
+         </span><span class="s2">"M D"</span><span class="p">:</span><span class="mi">1</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"status"</span><span class="p">:{</span><span class="w">
+         </span><span class="s2">"Internal Review"</span><span class="p">:</span><span class="mi">1</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+   </span><span class="p">},</span><span class="w">
+   </span><span class="s2">"quoted_ware_refs"</span><span class="p">:[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+         </span><span class="s2">"requestor_organization"</span><span class="p">:</span><span class="s2">"Scientist.com"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"quote_id"</span><span class="p">:</span><span class="s2">"3cda4f56-4231-4de4-8970-a8587b14798c"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"group_id"</span><span class="p">:</span><span class="s2">"7059911c-0ba8-4f2b-bf3f-b3fcafb44097"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"supplier_identifier"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"request_identifier"</span><span class="p">:</span><span class="s2">"B44097"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"title"</span><span class="p">:</span><span class="s2">"Test QuoteGroup"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"proposal_identifier"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"proposal_obsolete"</span><span class="p">:</span><span class="s2">"active"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"total_price"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"shipping_cost"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"tax_cost"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"submitted_subtotal_price(retail)"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"submitted_subtotal_price(wholesale)"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"number_of_times_purchased"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"cumulative_retail_price"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"cumulative_wholesale_price"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"transaction_fee(%)"</span><span class="p">:</span><span class="s2">"%"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"status"</span><span class="p">:</span><span class="s2">"Internal Review"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"reason_for_cancelling"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"reason_for_supplier_declining"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"discipline"</span><span class="p">:</span><span class="s2">"other"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"category"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"user_email"</span><span class="p">:</span><span class="s2">"madisyn6@scientist.com"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"provider_name"</span><span class="p">:</span><span class="s2">"Hand-Jast--15"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"vendor_contacts"</span><span class="p">:</span><span class="s2">"15test@example.com"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"followers"</span><span class="p">:[</span><span class="w">
+
+         </span><span class="p">],</span><span class="w">
+         </span><span class="s2">"requestor_state"</span><span class="p">:</span><span class="s2">"MS"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"requestor_country"</span><span class="p">:</span><span class="s2">"KN"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"ware_id"</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"ware_slug"</span><span class="p">:</span><span class="s2">"lisa-anderson03"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"created_date"</span><span class="p">:</span><span class="s2">"2019-10-29T18:43:27.635Z"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"updated_date"</span><span class="p">:</span><span class="s2">"2019-10-29T18:43:27.635Z"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"turn_around_adjusted_min"</span><span class="p">:</span><span class="s2">"-"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"turn_around_adjusted_max"</span><span class="p">:</span><span class="s2">"-"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"turn_around_units"</span><span class="p">:</span><span class="s2">"-"</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"ad_po_number"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"Project_completion_date"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"Estimated_completion_date"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"Final_material_deliver_date"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"Final_report_deliver_date"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"Actual_work_start_date"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"All_starting_material_received_date"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"PO_issue_date"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"SOW_acceptance_date"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"SOW_submitted_date"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"SOW_requested_date"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"Estimate_submission_date"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"Vendor_review_date"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+         </span><span class="s2">"Request_date"</span><span class="p">:</span><span class="s2">"2019-10-29T00:00:00.000Z"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+   </span><span class="p">],</span><span class="w">
+   </span><span class="s2">"options"</span><span class="p">:{</span><span class="w">
+      </span><span class="s2">"facets"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"page"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"per_page"</span><span class="p">:</span><span class="mi">25</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"sort_by"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"sort_order"</span><span class="p">:</span><span class="s2">"desc"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"provider_id"</span><span class="p">:[</span><span class="w">
+         </span><span class="mi">15</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="s2">"vendor_follower"</span><span class="p">:</span><span class="s2">"My Companies"</span><span class="w">
+   </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves a list of quote groups associated with the requesting API user.</p>
+
+<p><em>HTTP Request</em></p>
+
+<p><code>GET http://app.scientist.com/api/v1/quote_groups/mine.json</code></p>
+<h2 id='users'>Users</h2><h3 id='get-users'>Get Users</h3><h2 id='wares'>Wares</h2><h3 id='get-wares'>Get Wares</h3><h2 id='webhooks'>Webhooks</h2><h3 id='create-a-webhook'>Create a Webhook</h3><h1 id='errors'>Errors</h1>
 <aside class="notice">
 This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
 </aside>
